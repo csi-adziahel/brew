@@ -30,8 +30,8 @@ before_install:
   - if [ "$LINUX" ]; then
       umask 022;
     fi
-  # trigger vendored ruby installation
-  - brew help
+  # # trigger vendored ruby installation
+  # - brew help
   - if [ "$MACOS" ]; then
       mv "$HOMEBREW_REPOSITORY/Library/Taps" "$PWD/Library";
       sudo rm -rf "$HOMEBREW_REPOSITORY";
